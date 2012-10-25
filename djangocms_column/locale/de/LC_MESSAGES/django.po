@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: djangocms_column\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-25 11:18+0200\n"
+"PO-Revision-Date: 2012-10-25 11:20+0100\n"
+"Last-Translator: Patrick Lauber <patrick.lauber@divio.ch>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.3\n"
+"Language: de\n"
+
+#: cms_plugins.py:8
+msgid "Multi Columns"
+msgstr "Spalten"
+
+#: cms_plugins.py:23
+msgid "Column"
+msgstr "Spalte"
+
+#: models.py:10
+msgid "normal"
+msgstr "Normal"
+
+#: models.py:11
+msgid "2x"
+msgstr "2x"
+
+#: models.py:12
+msgid "3x"
+msgstr "3x"
+
+#: models.py:13
+msgid "4x"
+msgstr "4x"
+
+#: models.py:28
+msgid "width"
+msgstr "Breite"
