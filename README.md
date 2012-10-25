@@ -1,30 +1,22 @@
-djangocms-link
-==============
+djangocms-column
+================
 
-A Link plugin for django CMS.
+A Mulit Column Plugin for django CMS.
 
 
 Installation
 ------------
 
-This plugin requires `django CMS` 2.2 or higher to be properly installed and
-configured. If you have many pages it supports ajax loading for selecting a page.
-To enable this install Django-Select2 3.1.2 or above.
+This plugin requires `django CMS` 2.4 or higher to be properly installed.
 
-* In your projects `virtualenv`_, run ``pip install djangocms-link``.
-* Add ``'djangocms_link'`` to your ``INSTALLED_APPS`` setting.
-* Run ``manage.py migrate cmsplugin_disqus``.
-
-If you want to enable the ajax loading:
-
-* In your projects `virtualenv`_, run ``pip install Django-Select2``.
-* Add ``'django_select2'`` to your ``INSTALLED_APPS`` settings.
-* Add ``url(r'^select2/', include('django_select2.urls')),`` to your main ``urls.py``.
+* In your projects `virtualenv`_, run ``pip install djangocms-column``.
+* Add ``'djangocms_column'`` to your ``INSTALLED_APPS`` setting.
+* Run ``manage.py migrate cmsplugin_column``.
 
 Translations
 ------------
 
 If you want to help translate the plugin please do it on transifex:
 
-https://www.transifex.com/projects/p/django-cms/resource/djangocms-link/
+https://www.transifex.com/projects/p/django-cms/resource/djangocms-column/
 
