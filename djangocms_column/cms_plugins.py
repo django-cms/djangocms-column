@@ -1,6 +1,6 @@
 from cms.plugin_pool import plugin_pool
 from cms.plugin_base import CMSPluginBase
-from cms.plugins.column.models import MultiColumns, Column
+from djangocms_column.models import MultiColumns, Column
 from django.utils.translation import ugettext_lazy as _
 
 class MultiColumnPlugin(CMSPluginBase):
