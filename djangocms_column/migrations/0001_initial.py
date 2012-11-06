@@ -12,14 +12,14 @@ class Migration(SchemaMigration):
         db.create_table('cmsplugin_multicolumns', (
             ('cmsplugin_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['cms.CMSPlugin'], unique=True, primary_key=True)),
         ))
-        db.send_create_signal('column', ['MultiColumns'])
+        db.send_create_signal('djangocms_column', ['MultiColumns'])
 
         # Adding model 'Column'
         db.create_table('cmsplugin_column', (
             ('cmsplugin_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['cms.CMSPlugin'], unique=True, primary_key=True)),
-            ('width', self.gf('django.db.models.fields.CharField')(default=1, max_length=50)),
+            ('width', self.gf('django.db.models.fields.CharField')(default='1', max_length=50)),
         ))
-        db.send_create_signal('column', ['Column'])
+        db.send_create_signal('djangocms_column', ['Column'])
 
 
     def backwards(self, orm):
@@ -52,15 +52,15 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'slot': ('django.db.models.fields.CharField', [], {'max_length': '50', 'db_index': 'True'})
         },
-        'column.column': {
+        'djangocms_column.column': {
             'Meta': {'object_name': 'Column', 'db_table': "'cmsplugin_column'", '_ormbases': ['cms.CMSPlugin']},
             'cmsplugin_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['cms.CMSPlugin']", 'unique': 'True', 'primary_key': 'True'}),
-            'width': ('django.db.models.fields.CharField', [], {'default': '1', 'max_length': '50'})
+            'width': ('django.db.models.fields.CharField', [], {'default': "'1'", 'max_length': '50'})
         },
-        'column.multicolumns': {
+        'djangocms_column.multicolumns': {
             'Meta': {'object_name': 'MultiColumns', 'db_table': "'cmsplugin_multicolumns'", '_ormbases': ['cms.CMSPlugin']},
             'cmsplugin_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['cms.CMSPlugin']", 'unique': 'True', 'primary_key': 'True'})
         }
     }
 
-    complete_apps = ['column']
+    complete_apps = ['djangocms_column']
