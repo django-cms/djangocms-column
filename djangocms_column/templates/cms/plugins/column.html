@@ -1,5 +1,7 @@
 {% load cms_tags %}
 {% for plugin in instance.child_plugin_instances %}
-    {% render_plugin plugin %}
+	<div style="width: {{ instance.width }}00px;">
+    	{% render_plugin plugin %}
+    </div>
 {% endfor %}
 
