@@ -17,7 +17,9 @@ class MultiColumns(CMSPlugin):
     """
     A plugin that has sub Column classes
     """
-    pass
+    def __unicode__(self):
+        # TODO: prevent the extra db-hit
+        return u"%s columns" % self.cmsplugin_set.all().count()
 
 
 class Column(CMSPlugin):
@@ -26,4 +28,7 @@ class Column(CMSPlugin):
     """
 
     width = models.CharField(_("width"), choices=WIDTH_CHOICES, default=WIDTH_CHOICES[0][0], max_length=50)
+
+    def __unicode__(self):
+        return u"%s" % self.get_width_display()
 
