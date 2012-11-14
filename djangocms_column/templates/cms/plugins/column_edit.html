@@ -26,11 +26,12 @@
     });
 </script>
 {% endaddtoblock %}
-<div class="column_edit" style="width: {{ instance.width }}00px;float: left;">
-    <div id="cms_placeholder-{{ instance.pk }}" class="cms_placeholder cms_placeholder_slot::{{ instance.placeholder.slot }}">{% if instance.get_plugin_class.allow_children %}{{ instance.get_plugin_class.name }}{% else %}{{ rendered_content }}{% endif %}</div>
-    <div class="column">
-        {% for plugin in instance.child_plugin_instances %}
-        {% render_plugin plugin %}
-        {% endfor %}
-    </div>
+<div style="width: {{ instance.width }};float: left;" class="cms_moveable cms_multi" id="cms_placeholder_multi-{{ instance.pk }}"">
+<div id="cms_placeholder-{{ instance.pk }}" class="cms_placeholder cms_placeholder_slot::{{ instance.placeholder.slot }}">{% if instance.get_plugin_class.allow_children %}{{ instance.get_plugin_class.name }}{% else %}{{ rendered_content }}{% endif %}</div>
+{% if instance.get_plugin_class.allow_children %}
+<div class="column">
+    {% for plugin in instance.child_plugin_instances %}
+    {% render_plugin plugin %}
+    {% endfor %}
+</div>{% endif %}
 </div>
