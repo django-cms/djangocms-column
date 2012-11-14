@@ -22,6 +22,7 @@ class ColumnPlugin(CMSPluginBase):
     model = Column
     name = _("Column")
     render_template = "cms/plugins/column.html"
+    frontend_edit_template = 'cms/plugins/column_edit.html'
     allow_children = True
 
     def render(self, context, instance, placeholder):

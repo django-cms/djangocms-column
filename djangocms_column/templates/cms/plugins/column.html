@@ -1,7 +1,6 @@
 {% load cms_tags %}
+<div class="column" style="width: {{ instance.width }}00px;float: left;">
 {% for plugin in instance.child_plugin_instances %}
-	<div style="width: {{ instance.width }}00px;">
     	{% render_plugin plugin %}
-    </div>
 {% endfor %}
-
+</div>
