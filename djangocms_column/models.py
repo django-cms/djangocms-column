@@ -18,8 +18,14 @@ class MultiColumns(CMSPlugin):
     A plugin that has sub Column classes
     """
     def __unicode__(self):
-        # TODO: prevent the extra db-hit
-        return u"%s columns" % self.cmsplugin_set.all().count()
+        return _(u"%s columns") % self.cmsplugin_set.all().count()
+
+    def save_model(self, request, obj, form, change):
+        response = super(MultiColumns, self).save_model(request, obj, form, change)
+
+
+
+        return
 
 
 class Column(CMSPlugin):
