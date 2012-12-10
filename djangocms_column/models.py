@@ -7,10 +7,13 @@ if hasattr(settings, "COLUMN_WIDTH_CHOICES"):
     WIDTH_CHOICES = settings.COLUMN_WIDTH_CHOICES
 else:
     WIDTH_CHOICES = (
-        ('1', _("normal")),
-        ('2', _("2x")),
-        ('3', _("3x")),
-        ('4', _("4x"))
+        ('10%', _("10%")),
+        ('25%', _("25%")),
+        ('33.33%', _('33%')),
+        ('50%', _("50%")),
+        ('66.66%', _('66%')),
+        ('75%', _("75%")),
+        ('100%', _('100%')),
     )
 
 class MultiColumns(CMSPlugin):
@@ -19,13 +22,6 @@ class MultiColumns(CMSPlugin):
     """
     def __unicode__(self):
         return _(u"%s columns") % self.cmsplugin_set.all().count()
-
-    def save_model(self, request, obj, form, change):
-        response = super(MultiColumns, self).save_model(request, obj, form, change)
-
-
-
-        return
 
 
 class Column(CMSPlugin):

@@ -6,3 +6,5 @@
 .settings
 build
 env*
+dist
+djangocms_column.egg-info

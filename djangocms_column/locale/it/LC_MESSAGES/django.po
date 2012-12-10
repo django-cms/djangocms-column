@@ -1,41 +1,44 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
+#   <zio.pietro@katamail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: django-cms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-10 09:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-11-23 23:59+0000\n"
+"Last-Translator: bpietro <zio.pietro@katamail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: cms_plugins.py:10
 msgid "Multi Columns"
-msgstr ""
+msgstr "Multi colonne"
 
 #: cms_plugins.py:32
 msgid "Column"
-msgstr ""
+msgstr "Colonna"
 
 #: forms.py:21
+#, fuzzy
 msgid "Create Columns"
-msgstr ""
+msgstr "Multi colonne"
 
 #: forms.py:21
 msgid "Create this number of columns"
 msgstr ""
 
 #: forms.py:22
+#, fuzzy
 msgid "Column width"
-msgstr ""
+msgstr "Colonna"
 
 #: models.py:10
 msgid "10%"
@@ -66,10 +69,22 @@ msgid "100%"
 msgstr ""
 
 #: models.py:24
-#, python-format
+#, fuzzy, python-format
 msgid "%s columns"
-msgstr ""
+msgstr "Colonna"
 
 #: models.py:32
 msgid "width"
-msgstr ""
+msgstr "larghezza"
+
+#~ msgid "normal"
+#~ msgstr "normale"
+
+#~ msgid "2x"
+#~ msgstr "2 volte"
+
+#~ msgid "3x"
+#~ msgstr "3 volte"
+
+#~ msgid "4x"
+#~ msgstr "4 volte"
