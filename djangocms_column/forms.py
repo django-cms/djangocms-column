@@ -2,7 +2,7 @@ from django import forms
 from djangocms_column.models import MultiColumns, WIDTH_CHOICES
 from django.utils.translation import ugettext_lazy as _
 
-class MulitcolumnForm(forms.ModelForm):
+class MultiColumnForm(forms.ModelForm):
     NUM_COLUMNS = (
         (0, "0"),
         (1, "1"),
