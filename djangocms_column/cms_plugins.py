@@ -2,7 +2,7 @@ from cms.plugin_pool import plugin_pool
 from cms.plugin_base import CMSPluginBase
 from djangocms_column.models import MultiColumns, Column
 from django.utils.translation import ugettext_lazy as _
-from djangocms_column.forms import MulitcolumnForm
+from djangocms_column.forms import MultiColumnForm
 from cms.models import CMSPlugin
 
 class MultiColumnPlugin(CMSPluginBase):
@@ -11,7 +11,7 @@ class MultiColumnPlugin(CMSPluginBase):
     render_template = "cms/plugins/multi_column.html"
     allow_children = True
     child_classes = ["ColumnPlugin"]
-    form = MulitcolumnForm
+    form = MultiColumnForm
 
     def render(self, context, instance, placeholder):
         context.update({
