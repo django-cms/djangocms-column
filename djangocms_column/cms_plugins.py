@@ -7,6 +7,7 @@ from cms.models import CMSPlugin
 
 class MultiColumnPlugin(CMSPluginBase):
     model = MultiColumns
+    module = _("Multi Columns")
     name = _("Multi Columns")
     render_template = "cms/plugins/multi_column.html"
     allow_children = True
@@ -29,6 +30,7 @@ class MultiColumnPlugin(CMSPluginBase):
 
 class ColumnPlugin(CMSPluginBase):
     model = Column
+    module = _("Multi Columns")
     name = _("Column")
     render_template = "cms/plugins/column.html"
     #frontend_edit_template = 'cms/plugins/column_edit.html'
