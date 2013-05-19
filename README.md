@@ -1,7 +1,7 @@
 djangocms-column
 ================
 
-A Mulit Column Plugin for django CMS.
+A Multi Column Plugin for django CMS.
 
 
 Installation
@@ -17,7 +17,7 @@ This plugin requires `django CMS` 2.4 or higher to be properly installed.
 Usage
 -----
 
-There are 2 plugins: MulitColumn and Column
+There are 2 plugins: MultiColumn and Column
 The first is MultiColumn that should be added to your placeholder conf.
 MultiColumn only allows one plugin as a child: the Column plugin.
 The Column plugin has a parameter width. With this parameter you can control the width 
