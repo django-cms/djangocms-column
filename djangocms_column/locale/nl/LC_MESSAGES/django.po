@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# Bouke Haarsma <bouke@webatoom.nl>, 2012.
+# Bouke Haarsma <bouke@webatoom.nl>, 2012
+# kurdy <transifex.net@kurdyenviolien.nl>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-10 09:24+0100\n"
-"PO-Revision-Date: 2012-11-27 15:44+0000\n"
-"Last-Translator: Bouke Haarsma <bouke@webatoom.nl>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: nl\n"
+"PO-Revision-Date: 2014-02-06 13:31+0000\n"
+"Last-Translator: Patrick Lauber <patrick.lauber@divio.ch>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/django-cms/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: cms_plugins.py:10
@@ -27,64 +28,50 @@ msgid "Column"
 msgstr "Kolom"
 
 #: forms.py:21
-#, fuzzy
 msgid "Create Columns"
-msgstr "Meerdere Kolommen"
+msgstr "Maak kolommen"
 
 #: forms.py:21
 msgid "Create this number of columns"
-msgstr ""
+msgstr "Maak dit aantal kolommen"
 
 #: forms.py:22
-#, fuzzy
 msgid "Column width"
-msgstr "Kolom"
+msgstr "Kolombreedte"
 
 #: models.py:10
 msgid "10%"
-msgstr ""
+msgstr "10%"
 
 #: models.py:11
 msgid "25%"
-msgstr ""
+msgstr "25%"
 
 #: models.py:12
 msgid "33%"
-msgstr ""
+msgstr "33%"
 
 #: models.py:13
 msgid "50%"
-msgstr ""
+msgstr "50%"
 
 #: models.py:14
 msgid "66%"
-msgstr ""
+msgstr "66%"
 
 #: models.py:15
 msgid "75%"
-msgstr ""
+msgstr "75%"
 
 #: models.py:16
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: models.py:24
-#, fuzzy, python-format
+#, python-format
 msgid "%s columns"
-msgstr "Kolom"
+msgstr "%s kolommen"
 
 #: models.py:32
 msgid "width"
 msgstr "breedte"
-
-#~ msgid "normal"
-#~ msgstr "normaal"
-
-#~ msgid "2x"
-#~ msgstr "2x"
-
-#~ msgid "3x"
-#~ msgstr "3x"
-
-#~ msgid "4x"
-#~ msgstr "4x"

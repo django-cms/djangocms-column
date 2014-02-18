@@ -1,87 +1,77 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-#   <fazekasda@gmail.com>, 2012.
+# fazekasda <fazekasda@gmail.com>, 2013
+# fazekasda <fazekasda@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-10 09:24+0100\n"
-"PO-Revision-Date: 2012-11-16 23:06+0000\n"
+"PO-Revision-Date: 2014-02-06 13:31+0000\n"
 "Last-Translator: fazekasda <fazekasda@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: hu\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/django-cms/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: cms_plugins.py:10
 msgid "Multi Columns"
-msgstr ""
+msgstr "Több oszlop"
 
 #: cms_plugins.py:32
 msgid "Column"
 msgstr "Oszlop"
 
 #: forms.py:21
-#, fuzzy
 msgid "Create Columns"
-msgstr "Oszlop"
+msgstr "Oszlop létrehozása"
 
 #: forms.py:21
 msgid "Create this number of columns"
-msgstr ""
+msgstr "Következő számú oszlopok létrehozása"
 
 #: forms.py:22
-#, fuzzy
 msgid "Column width"
-msgstr "Oszlop"
+msgstr "Oszlop szélessége"
 
 #: models.py:10
 msgid "10%"
-msgstr ""
+msgstr "10%"
 
 #: models.py:11
 msgid "25%"
-msgstr ""
+msgstr "25%"
 
 #: models.py:12
 msgid "33%"
-msgstr ""
+msgstr "33%"
 
 #: models.py:13
 msgid "50%"
-msgstr ""
+msgstr "50%"
 
 #: models.py:14
 msgid "66%"
-msgstr ""
+msgstr "66%"
 
 #: models.py:15
 msgid "75%"
-msgstr ""
+msgstr "75%"
 
 #: models.py:16
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: models.py:24
-#, fuzzy, python-format
+#, python-format
 msgid "%s columns"
-msgstr "Oszlop"
+msgstr "%s oszlopok"
 
 #: models.py:32
 msgid "width"
 msgstr "szélesség"
-
-#~ msgid "2x"
-#~ msgstr "2x"
-
-#~ msgid "3x"
-#~ msgstr "3x"
-
-#~ msgid "4x"
-#~ msgstr "4x"
