@@ -28,10 +28,13 @@ You can add a new setting to your settings.py called `COLUMN_WIDTH_CHOICES`
 the default is::
 
 	COLUMN_WIDTH_CHOICES = (
-	    ('1', _("normal")),
-	    ('2', _("2x")),
-	    ('3', _("3x")),
-	    ('4', _("4x"))
+            ('10%', _("10%")),
+            ('25%', _("25%")),
+            ('33.33%', _('33%')),
+            ('50%', _("50%")),
+            ('66.66%', _('66%')),
+            ('75%', _("75%")),
+            ('100%', _('100%')),
 	)
 
 but you can change that to fit your CSS grid framework or other purposes.
