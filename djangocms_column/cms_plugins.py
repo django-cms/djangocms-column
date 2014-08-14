@@ -23,7 +23,7 @@ class MultiColumnPlugin(CMSPluginBase):
 
     def save_model(self, request, obj, form, change):
         response = super(MultiColumnPlugin, self).save_model(request, obj, form, change)
-        for x in xrange(int(form.cleaned_data['create'])):
+        for x in range(int(form.cleaned_data['create'])):
             col = Column(parent=obj, placeholder=obj.placeholder, language=obj.language, width=form.cleaned_data['create_width'], position=CMSPlugin.objects.filter(parent=obj).count(), plugin_type=ColumnPlugin.__name__)
             col.save()
         return response
