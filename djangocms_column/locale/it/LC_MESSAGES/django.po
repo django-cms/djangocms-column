@@ -4,7 +4,7 @@
 # 
 # Translators:
 # yakky <i.spalletti@nephila.it>, 2012
-# bpietro <zio.pietro@katamail.com>, 2012
+# Pietro Bernardi <zio.pietro@katamail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"

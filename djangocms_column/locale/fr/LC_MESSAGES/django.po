@@ -5,7 +5,7 @@
 # Translators:
 # charettes <charette.s@gmail.com>, 2012
 # Christophe kryskool <christophe.chauvet@gmail.com>, 2013
-# rachid <rbouikila@gmail.com>, 2013
+# bouikila <rbouikila@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"
