@@ -15,7 +15,7 @@ This plugin requires `django CMS` 2.4 or higher to be properly installed.
   to ``MIGRATION_MODULES``  (or define ``MIGRATION_MODULES`` if it does not exists);
   when django CMS 3.1 will be released, migrations for Django 1.7 will be moved
   to the standard location and the south-style ones to ``south_migrations``.
-* Run ``manage.py migrate cmsplugin_column``.
+* Run ``manage.py migrate djangocms_column``.
 
 
 Usage
