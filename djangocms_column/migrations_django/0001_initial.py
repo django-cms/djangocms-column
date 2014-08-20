@@ -14,8 +14,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Column',
             fields=[
-                ('width', models.CharField(default=b'10%', max_length=50, verbose_name='width', choices=[(b'10%', '10%'), (b'25%', '25%'), (b'33.33%', '33%'), (b'50%', '50%'), (b'66.66%', '66%'), (b'75%', '75%'), (b'100%', '100%')])),
-                ('cmsplugin_ptr', models.OneToOneField(auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin')),
+                ('cmsplugin_ptr', models.OneToOneField(serialize=False, parent_link=True, auto_created=True, to='cms.CMSPlugin', primary_key=True)),
+                ('width', models.CharField(verbose_name='width', default='10%', max_length=50, choices=[('10%', '10%'), ('25%', '25%'), ('33.33%', '33%'), ('50%', '50%'), ('66.66%', '66%'), ('75%', '75%'), ('100%', '100%')])),
             ],
             options={
                 'abstract': False,
@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='MultiColumns',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin')),
+                ('cmsplugin_ptr', models.OneToOneField(serialize=False, parent_link=True, auto_created=True, to='cms.CMSPlugin', primary_key=True)),
             ],
             options={
                 'abstract': False,
