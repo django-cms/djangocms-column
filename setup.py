@@ -30,7 +30,7 @@ setup(
     author='Divio AG',
     author_email='info@divio.ch',
     url='https://github.com/divio/djangocms-column',
-    packages=['djangocms_column', 'djangocms_column.migrations'],
+    packages=['djangocms_column', 'djangocms_column.migrations', 'djangocms_column.migrations_django'],
     install_requires=INSTALL_REQUIRES,
     license='LICENSE.txt',
     platforms=['OS Independent'],
