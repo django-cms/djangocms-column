@@ -3,32 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Bayarkhuu Bataa, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-10 09:24+0100\n"
-"PO-Revision-Date: 2014-02-06 13:31+0000\n"
-"Last-Translator: Bayarkhuu Bataa\n"
-"Language-Team: Mongolian (Mongolia) (http://www.transifex.com/projects/p/django-cms/language/mn_MN/)\n"
+"PO-Revision-Date: 2012-10-25 12:25+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Uighur (http://www.transifex.com/projects/p/django-cms/language/ug/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mn_MN\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ug\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: cms_plugins.py:10
 msgid "Multi Columns"
-msgstr "Олон багана"
+msgstr ""
 
 #: cms_plugins.py:32
 msgid "Column"
-msgstr "Багана"
+msgstr ""
 
 #: forms.py:21
 msgid "Create Columns"
-msgstr "Багана үүсгэх"
+msgstr ""
 
 #: forms.py:21
 msgid "Create this number of columns"
@@ -36,11 +35,11 @@ msgstr ""
 
 #: forms.py:22
 msgid "Column width"
-msgstr "Баганы өргөн"
+msgstr ""
 
 #: models.py:10
 msgid "10%"
-msgstr "10%"
+msgstr ""
 
 #: models.py:11
 msgid "25%"
@@ -73,4 +72,4 @@ msgstr ""
 
 #: models.py:32
 msgid "width"
-msgstr "өргөн"
+msgstr ""
