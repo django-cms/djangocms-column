@@ -1,6 +1,8 @@
 from django import forms
-from djangocms_column.models import MultiColumns, WIDTH_CHOICES
 from django.utils.translation import ugettext_lazy as _
+
+from .models import MultiColumns, WIDTH_CHOICES
+
 
 class MultiColumnForm(forms.ModelForm):
     NUM_COLUMNS = (
@@ -17,10 +19,19 @@ class MultiColumnForm(forms.ModelForm):
         (10, "10"),
     )
 
-
-    create = forms.ChoiceField(choices=NUM_COLUMNS, label=_("Create Columns"), help_text=_("Create this number of columns"))
-    create_width = forms.ChoiceField(choices=WIDTH_CHOICES, label=_("Column width"), help_text=("Width of created columns. You can still change the width of the column afterwards."))
-
+    create = forms.ChoiceField(
+        choices=NUM_COLUMNS,
+        label=_("Create Columns"),
+        help_text=_("Create this number of columns")
+    )
+    create_width = forms.ChoiceField(
+        choices=WIDTH_CHOICES,
+        label=_("Column width"),
+        help_text=(
+            "Width of created columns. You can still change the width of the "
+            "column afterwards."
+        )
+    )
 
     class Meta:
         model = MultiColumns
