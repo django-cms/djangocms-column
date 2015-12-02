@@ -1,5 +1,5 @@
 include LICENSE.txt
-include README.md
+include README.rst
 recursive-include djangocms_column/migrations *
 recursive-include djangocms_column/south_migrations *
 recursive-include djangocms_column/locale *
