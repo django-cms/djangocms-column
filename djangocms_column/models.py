@@ -1,8 +1,8 @@
 from cms.models import CMSPlugin
+from cms.utils.compat.dj import python_2_unicode_compatible
+from django.conf import settings
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from django.conf import settings
-from cms.utils.compat.dj import python_2_unicode_compatible
 
 if hasattr(settings, "COLUMN_WIDTH_CHOICES"):
     WIDTH_CHOICES = settings.COLUMN_WIDTH_CHOICES
@@ -16,6 +16,7 @@ else:
         ('75%', _("75%")),
         ('100%', _('100%')),
     )
+
 
 @python_2_unicode_compatible
 class MultiColumns(CMSPlugin):
@@ -31,8 +32,12 @@ class Column(CMSPlugin):
     """
     A Column for the MultiColumns Plugin
     """
-
-    width = models.CharField(_("width"), choices=WIDTH_CHOICES, default=WIDTH_CHOICES[0][0], max_length=50)
+    width = models.CharField(
+        _("width"),
+        choices=WIDTH_CHOICES,
+        default=WIDTH_CHOICES[0][0],
+        max_length=50
+    )
 
     def __str__(self):
         return u"%s" % self.get_width_display()
