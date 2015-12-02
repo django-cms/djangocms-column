@@ -27,7 +27,7 @@ class MultiColumnForm(forms.ModelForm):
     create_width = forms.ChoiceField(
         choices=WIDTH_CHOICES,
         label=_("Column width"),
-        help_text=(
+        help_text=_(
             "Width of created columns. You can still change the width of the "
             "column afterwards."
         )
