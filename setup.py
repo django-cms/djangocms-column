@@ -5,7 +5,8 @@ from djangocms_column import __version__
 
 
 INSTALL_REQUIRES = [
-
+    'django-cms>=3.2.0',
+    'django>=1.8,<1.10',
 ]
 
 CLASSIFIERS = [
@@ -33,7 +34,6 @@ setup(
     packages=[
         'djangocms_column',
         'djangocms_column.migrations',
-        'djangocms_column.south_migrations'
     ],
     install_requires=INSTALL_REQUIRES,
     license='LICENSE.txt',

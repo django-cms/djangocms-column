@@ -16,13 +16,6 @@ class MultiColumnPlugin(CMSPluginBase):
     child_classes = ["ColumnPlugin"]
     form = MultiColumnForm
 
-    def render(self, context, instance, placeholder):
-        context.update({
-            'instance': instance,
-            'placeholder': placeholder,
-        })
-        return context
-
     def save_model(self, request, obj, form, change):
         response = super(MultiColumnPlugin, self).save_model(
             request, obj, form, change
@@ -48,12 +41,6 @@ class ColumnPlugin(CMSPluginBase):
     parent_classes = ["MultiColumnPlugin"]
     allow_children = True
 
-    def render(self, context, instance, placeholder):
-        context.update({
-            'instance': instance,
-            'placeholder': placeholder,
-        })
-        return context
 
 plugin_pool.register_plugin(MultiColumnPlugin)
 plugin_pool.register_plugin(ColumnPlugin)
