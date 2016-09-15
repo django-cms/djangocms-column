@@ -23,8 +23,15 @@ class MultiColumns(CMSPlugin):
     """
     A plugin that has sub Column classes
     """
+    cmsplugin_ptr = models.OneToOneField(
+        CMSPlugin,
+        related_name='%(app_label)s_%(class)s',
+        parent_link=True,
+    )
+
     def __str__(self):
-        return _(u"%s columns") % self.cmsplugin_set.all().count()
+        plugins = self.child_plugin_instances or []
+        return _(u"%s columns") % len(plugins)
 
 
 @python_2_unicode_compatible
@@ -37,6 +44,11 @@ class Column(CMSPlugin):
         choices=WIDTH_CHOICES,
         default=WIDTH_CHOICES[0][0],
         max_length=50
+    )
+    cmsplugin_ptr = models.OneToOneField(
+        CMSPlugin,
+        related_name='%(app_label)s_%(class)s',
+        parent_link=True,
     )
 
     def __str__(self):
