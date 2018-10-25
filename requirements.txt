@@ -1,2 +1,1 @@
-transifex-client
-django-cms>=2.3
+django-cms>=3.4.5,<4.1
