@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import setup
+
 from djangocms_column import __version__
 
 
 INSTALL_REQUIRES = [
-    'django-cms>=3.2.0',
-    'django>=1.8,<2',
+    'django-cms>=3.4.5',
+    'Django>=1.11,<2.2',
 ]
 
 CLASSIFIERS = [
@@ -16,12 +17,15 @@ CLASSIFIERS = [
     'Intended Audience :: Developers',
     'License :: OSI Approved :: BSD License',
     'Operating System :: OS Independent',
-    'Programming Language :: Python',
     'Topic :: Communications',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Message Boards',
-    'Programming Language :: Python :: 2.6',
+    'Programming Language :: Python',
     'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
 ]
 
 setup(
