@@ -7,7 +7,7 @@ from djangocms_column import __version__
 
 INSTALL_REQUIRES = [
     'django-cms>=3.4.5',
-    'Django>=1.11,<2.2',
+    'Django>=1.11,<2.3',
 ]
 
 CLASSIFIERS = [
