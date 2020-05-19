@@ -2,6 +2,10 @@
 Changelog
 =========
 
+1.10.0 (2020-05-19)
+==================
+
+* Added support for Django 2.2 and listed Python 3.7 as compatible
 
 1.9.0 (2018-11-07)
 ==================
