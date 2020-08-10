@@ -1,9 +1,10 @@
+from six import python_2_unicode_compatible
+
 from django.conf import settings
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from cms.models import CMSPlugin
-from cms.utils.compat.dj import python_2_unicode_compatible
 
 if hasattr(settings, "COLUMN_WIDTH_CHOICES"):
     WIDTH_CHOICES = settings.COLUMN_WIDTH_CHOICES
