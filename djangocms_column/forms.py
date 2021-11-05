@@ -1,7 +1,7 @@
 from django import forms
 from django.utils.translation import ugettext_lazy as _
 
-from .models import MultiColumns, WIDTH_CHOICES
+from .models import WIDTH_CHOICES, MultiColumns
 
 
 class MultiColumnForm(forms.ModelForm):
