@@ -5,7 +5,7 @@ from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 
 from .forms import MultiColumnForm
-from .models import MultiColumns, Column
+from .models import Column, MultiColumns
 
 
 class MultiColumnPlugin(CMSPluginBase):
@@ -18,10 +18,10 @@ class MultiColumnPlugin(CMSPluginBase):
     form = MultiColumnForm
 
     def save_model(self, request, obj, form, change):
-        response = super(MultiColumnPlugin, self).save_model(
+        response = super().save_model(
             request, obj, form, change
         )
-        for x in range(int(form.cleaned_data['create'])):
+        for _x in range(int(form.cleaned_data['create'])):
             col = Column(
                 parent=obj,
                 placeholder=obj.placeholder,

@@ -1,1 +1,2 @@
 django-cms>=3.4.5,<4.1
+pre-commit==2.15.0

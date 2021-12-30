@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 import django.db.models.deletion
-from django.db import models, migrations
+from django.db import migrations, models
 
 from djangocms_column.models import WIDTH_CHOICES
 

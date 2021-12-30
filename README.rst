@@ -17,10 +17,10 @@ This plugin requires `django CMS` 3.4.5 or higher to be properly installed.
 Usage
 -----
 
-There are 2 plugins: MultiColumn and Column
-The first is MultiColumn that should be added to your placeholder conf.
-MultiColumn only allows one plugin as a child: the Column plugin.
-The Column plugin has a parameter width. With this parameter you can control the width 
+There are 2 plugins: `MultiColumn` and `Column`
+The first is `MultiColumn` that should be added to your placeholder conf.
+`MultiColumn` only allows one plugin as a child: the `Column` plugin.
+The `Column` plugin has a parameter width. With this parameter you can control the width
 of the column. 
 
 You can add a new setting to your settings.py called `COLUMN_WIDTH_CHOICES`
