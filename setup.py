@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+from pathlib import Path
+
 from setuptools import setup
 
 from djangocms_column import __version__
 
 INSTALL_REQUIRES = [
-    'django-cms>=3.4.5',
-    'Django>=1.11,<3.3'
+    'django-cms>=3.8.0',
+    'Django>=2.2'  # the maximum version should be dictated by the cms
 ]
 
 CLASSIFIERS = [
@@ -13,22 +15,23 @@ CLASSIFIERS = [
     'Environment :: Web Environment',
     'Framework :: Django',
     'Framework :: Django :: 2.2',
-    'Framework :: Django :: 3.0',
-    'Framework :: Django :: 3.1',
     'Framework :: Django :: 3.2',
     'Intended Audience :: Developers',
     'License :: OSI Approved :: BSD License',
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
     'Topic :: Communications',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Message Boards',
 ]
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name='djangocms-column',
@@ -45,7 +48,9 @@ setup(
     license='LICENSE.txt',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
-    long_description=open('README.rst').read(),
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
     include_package_data=True,
+    python_requires='>=3.7',
     zip_safe=False
 )
