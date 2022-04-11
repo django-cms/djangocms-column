@@ -7,7 +7,7 @@ A Multi Column Plugin for django CMS.
 Installation
 ------------
 
-This plugin requires `django CMS` 3.4.5 or higher to be properly installed.
+This plugin requires `django CMS` 3.8 or higher to be properly installed.
 
 * In your projects virtualenv, run ``pip install djangocms-column``.
 * Add ``'djangocms_column'`` to your ``INSTALLED_APPS`` setting.
