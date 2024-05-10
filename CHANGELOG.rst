@@ -2,6 +2,12 @@
 Changelog
 =========
 
+2.1.0 (2024-05-10)
+==================
+
+* fix: add missing migration by @sephii in https://github.com/django-cms/djangocms-column/pull/58
+* fix: Update cms_plugins.py for django CMS 4 compatibility by @aacimov in https://github.com/django-cms/djangocms-column/pull/60
+
 
 2.0.0 (2022-04-11)
 ==================
