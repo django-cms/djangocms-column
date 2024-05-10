@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from cms.models import CMSPlugin
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-
+from cms import api
 from .forms import MultiColumnForm
 from .models import Column, MultiColumns
 
@@ -22,13 +22,12 @@ class MultiColumnPlugin(CMSPluginBase):
             request, obj, form, change
         )
         for _x in range(int(form.cleaned_data['create'])):
-            col = Column(
-                parent=obj,
+            col = api.add_plugin(
                 placeholder=obj.placeholder,
+                plugin_type=ColumnPlugin.__name__,
                 language=obj.language,
+                target=obj,
                 width=form.cleaned_data['create_width'],
-                position=CMSPlugin.objects.filter(parent=obj).count(),
-                plugin_type=ColumnPlugin.__name__
             )
             col.save()
         return response
